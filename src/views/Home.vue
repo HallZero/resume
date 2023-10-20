@@ -3,6 +3,14 @@
     
     <InfoCard />
 
+    <section class="section-class">
+      <h1>Introduction</h1>
+      <div>
+        <p>👋 Hello, there! My name is Filipi and I'm currently graduating in computer engeneer at Inteli.</p>
+        <p>I'm {{ age }} years old and looking for opportunities to improve my knowledge and test my skills and limits.</p>
+      </div>
+    </section>
+
     <section>
       <h1>Technologies</h1>
       <div class="badges">
@@ -75,6 +83,7 @@
         src5: "https://skills.thijs.gg/icons?i=git",
         src6: "https://skills.thijs.gg/icons?i=github",
         src7: "https://skills.thijs.gg/icons?i=aws",
+        age: 20
       }
     }
   }
@@ -83,7 +92,35 @@
   
 </script>
 
-<style>
+<style scoped>
+
+  .section-class{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .section-class p{
+    overflow: hidden;
+    border-right: .15em solid plum;
+    white-space: nowrap;
+    margin: 0 auto;
+    max-width: fit-content;
+    letter-spacing: .15em;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+
+  @keyframes typing{
+    from { width: 0 }
+    to { width: fit-content;}
+  }
+
+  @keyframes blink-caret{
+    from, to { border-color: transparent }
+    50% { border-color: plum; }
+  }
+
   .badges{
     display: flex;
     flex-direction: row;
@@ -119,5 +156,33 @@
     opacity: 1;
     transform: rotateY(0) scale(1.0);
   }
+
+  .typewriter p{
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    /* Ensures the content is not revealed until the animation */
+    /* border-right: .15em solid orange; The typewriter cursor 
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens 
+    letter-spacing: 0.15em; Adjust as needed 
+    white-space: nowrap;
+    max-width: 100%;
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret 0.75s step-end infinite; */
+  }
+
+
+    /* The typing effect */
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    /* The typewriter cursor effect
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: plum; }
+    } */
 </style>
 

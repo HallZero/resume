@@ -35,5 +35,10 @@
         margin: 0 auto;
     }
 
+    .container p{
+        width: 300px;
+        text-align: justify;
+    }
+
 
 </style>

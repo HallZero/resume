@@ -4,12 +4,7 @@
             <img id="profile-picture" src="/img/Filipi.jpeg" alt="Filipi's picture">
         </div>
         <div class="text">
-            <h1>Filipi Enzo Siqueira Kikuchi</h1>
-
-            <div class="subinfo">
-                <h2>He/Him</h2>
-                <h2>07/02/2003</h2>
-            </div>
+            <h1>Filipi Enzo Siqueira Kikuchi · <span>He/Him</span> </h1>
             
             <div class="subinfo">
                 <div>
@@ -53,13 +48,16 @@
         align-items: center;
         grid-template-columns: 1fr 1fr;
         column-gap: 5px;
+        margin-top: 15px;
     }
 
     .text{
-        border: 2px solid #222;
+        /* border: 2px solid #222; */
         padding: 0 auto;
         justify-content: center;
         align-items: center;
+        width: fit-content;
+        margin: 0;
     }
 
     .container{
@@ -81,6 +79,9 @@
 
     .image{
         margin: 0 50px;
+        display: flex;
+        justify-content: end;
+
     }
 
     .subinfo{
@@ -88,8 +89,12 @@
         grid-template-columns: 1fr 1fr;
     }
 
-    .subinfo h2{
-        display: inline;
-        margin-right: 10px;
+    .subinfo h3{
+        margin: 0;
     }
+
+    span {
+        color: #7D8590;
+    }
+
 </style>

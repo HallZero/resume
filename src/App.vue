@@ -11,7 +11,7 @@ import Navbar from './components/Navbar.vue';
 <style scoped>
   
   * {
-    /* font-family: Helvetica; */
+    font-family: monospace;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
