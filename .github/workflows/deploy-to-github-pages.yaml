@@ -43,7 +43,6 @@ jobs:
 
             - name: Install and Build
               run: |
-                  cd docs
                   npm install
                   npm run build
                   mv dist ../build
