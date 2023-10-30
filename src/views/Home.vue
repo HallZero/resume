@@ -33,8 +33,8 @@
     <section>
       <h1>Skills</h1>
       <div class="badges">
-        <Badge src="/img/teamwork.png" alt="Teamwork"/>
-        <Badge src="/img/leadership.png" alt="Leadership"/>
+        <Badge src="./img/teamwork.png" alt="Teamwork"/>
+        <Badge src="./img/leadership.png" alt="Leadership"/>
       </div>
     </section>
 
